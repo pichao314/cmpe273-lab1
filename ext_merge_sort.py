@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-
-'''
-The external merge sort module
-'''
+import logging
+import unittest
+import os
 import sys
 import os
+import sys
 import unittest
 import logging
 logging.basicConfig(level=logging.INFO,
@@ -12,17 +12,44 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w',
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     )
+'''
+The external merge sort module
+'''
+
+# merge sort class, accept the maximun size and the list of filenames to make merge sort, also offer a static version of merge sort
 
 
 class mergesort:
 
-    # the constructor store the outer unsorted list
-    def __init__(self, unsort):
+    # constructor
+    def __init__(self, size, files):
         super().__init__()
-        self.nums = unsort
-        self.path = "output/"
+        self._size = 0
+        self._files = files
 
-    # divide the list into two parts
+    # read a single unsorted file and output sorted
+    def readone(self, file):
+        pass
+
+    # read multiple unsorted files and output sorted
+    def readn(self):
+        for each in self._files:
+            readone(each)
+
+    # merge sorted files and output multiple
+    def mergen(self):
+        pass
+
+    # merge sorted files and output single
+    def mergeone(self):
+        pass
+
+    @staticmethod
+    # merge sort a limited size array
+    def sort(us):
+        pass
+
+    # helper dividing function
     def divide(self, us):
         if not us or len(us) <= 1:
             raise ValueError
@@ -32,7 +59,7 @@ class mergesort:
         R = us[mid:]
         return L, R
 
-    # merge two sorted list by two pointers
+    # helper mergering function
     def merge(self, l, r):
         # compare from left to right on two list and combine
         logging.info("Current merging:")
@@ -54,83 +81,31 @@ class mergesort:
             comb += r[j:]
         return comb
 
-    # merge multiple sorted
-    def mergeall(self, us):
-        logging.info('us = %s', str(us))
-        if not us:
-            return us
-        elif len(us) == 1:
-            return us[0]
-        elif len(us) == 2:
-            return self.merge(us[0], us[1])
-        else:
-            n = len(us)
-            return self.merge(self.mergeall(us[:n//2]), self.mergeall(us[n//2:]))
-
-    # recursive way of sorting
-    def sort(self, us):
-        if len(us) <= 1:
-            return us
-        L, R = self.divide(us)
-        return self.merge(self.sort(L), self.sort(R))
-
-    def solve(self):
-        self.nums = self.sort(self.nums)
-        return self.nums
-
-    # static version
-    @staticmethod
-    def sortout(unsort):
-        return mergesort(unsort).solve()
-
-    # read from path
-    def read(self, path):
-        filename = path.split("_")[-1]
-        self.path += "sorted_"+filename
-        unsort = []
-        with open(path, 'r') as f:
-            for line in f:
-                unsort.append(int(line))
-        self.nums = unsort
-        return unsort
-
-    # read from a path and return sorted
-    def readandsort(self, path):
-        sub = []
-        with open('input/'+path, 'r') as f:
-            for line in f:
-                sub.append(int(line))
-        return mergesort(sub).solve()
-
-    # write to path
-    def write(self):
-        with open(self.path, 'w') as f:
-            for each in self.nums:
-                f.write(str(each))
-                f.write('\n')
-
-    # method to sort all together
-    def sortall(self):
-        for file in os.listdir('input/'):
-            self.nums.append(self.readandsort(file))
-        ans = self.mergeall(self.nums)
-        with open('output/sorted.txt', 'w') as f:
-            for each in ans:
-                f.write(str(each))
-                f.write('\n')
+# unit test class
 
 
-# unit tests
-class TestMerge(unittest.TestCase):
+class testMerge(unittest.TestCase):
 
-    # test the sorting function
     def test_init(self):
-        foo = mergesort([i for i in range(10, 0, -1)])
-        self.assertEqual([i for i in range(1, 11)], foo.solve())
+        pass
 
-    # test the divide function
+    def test_readone(self):
+        pass
+
+    def test_readn(self):
+        pass
+
+    def test_mergen(self):
+        pass
+
+    def test_mergeone(self):
+        pass
+
+    def test_sort(self):
+        pass
+
     def test_divide(self):
-        foo = mergesort([])
+        foo = mergesort(10, './')
         with self.assertRaises(ValueError):
             cb = foo.divide([])
         with self.assertRaises(ValueError):
@@ -138,41 +113,18 @@ class TestMerge(unittest.TestCase):
         self.assertEqual(([1], [2]), foo.divide([1, 2]))
         self.assertEqual(([1], [2, 3]), foo.divide([1, 2, 3]))
 
-    # test the merget function
     def test_merge(self):
-        foo = mergesort([])
+        foo = mergesort(10, './')
         self.assertEqual([], foo.merge([], []))
         self.assertEqual([1, 2], foo.merge([2], [1]))
         self.assertEqual([1, 2, 3, 4], foo.merge([2, 3], [1, 4]))
         self.assertEqual([1, 2, 3, 4, 5], foo.merge([1, 2, 3, 4], [5]))
 
-    # test the static sorting
-    def test_st(self):
-        self.assertEqual([i for i in range(1, 11)],
-                         mergesort.sortout([i for i in range(10, 0, -1)]))
-
-    # test read file
-    def test_read(self):
-        self.assertEqual([7, 9, 5, 0, 1, 4, 8, 6, 2, 3],
-                         mergesort([]).read('data_1.txt'))
-
-    # test merge all
-    def test_mergeall(self):
-        self.assertEqual([i for i in range(12)], mergesort([]).mergeall(
-            [[i for i in range(x, x+3)] for x in range(0, 10, 3)]))
-
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        foo = mergesort([])
-        foo.sortall()
-        # ans = foo.readandsort('unsorted_1.txt')
-        # with open('output/sorted.txt', 'w') as f:
-        #     for each in ans:
-        #         f.write(str(each))
-        #         f.write('\n')
+        pass
     elif len(sys.argv) == 2:
-        foo = mergesort([])
-        foo.read(sys.argv[1])
-        foo.solve()
-        foo.write()
+        pass
+    else:
+        raise ValueError
