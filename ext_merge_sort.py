@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-import logging
-import unittest
-import os
-import sys
+
 import os
 import sys
 import unittest
@@ -12,132 +9,66 @@ logging.basicConfig(level=logging.INFO,
                     filemode='w',
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     )
-'''
-The external merge sort module
-'''
 
-# merge sort class, accept the maximun size and the list of filenames to make merge sort, also offer a static version of merge sort
+# input and output buffer
 
 
-class mergesort:
-
-    # constructor
-    def __init__(self, size, files):
+class inbuff:
+    def __init__(self, infile):
         super().__init__()
-        self._size = size
-        self._files = files
+        self.file = infile
+        self.buff = []
+        self.loc = 0
 
-    # read a single unsorted file and output sorted
-    def readone(self, file):
-        us = []
-        filename = file.split("_")[-1]
-        with open('input/'+file, 'r') as f:
-            for line in f:
-                us.append(int(line))
-        us = self.sort(us)
-        with open('output/sorted_'+filename, 'w') as f:
-            for each in us:
-                f.write(str(each)+'\n')
+    def read(self, size):
+        with open(self.file, 'r') as f:
+            self.buff.clear()
+            start = self.loc
+            self.loc += size
+            end = start + size
+            logging.info("Current fetching from %d to %d" % (start, end))
+            for i, v in enumerate(f):
+                if i >= start and i < end and v:
+                    self.buff.append(int(v))
+            logging.info("Fetching result is %s" % str(self.buff))
+        return self.buff
 
-    # read multiple unsorted files and output sorted
 
-    def readn(self):
-        for each in self._files:
-            self.readone(each)
+class outbuff:
+    def __init__(self, size):
+        super().__init__()
+        self.buff = []
+        self.size = size
 
-    # merge sorted files and output multiple
-    def mergen(self):
-        pass
-
-    # merge sorted files and output single
-    def mergeone(self):
-        pass
-
-    def sort(self, us):
-        if not us or len(us) <= 1:
-            return us
-        L, R = self.divide(us)
-        return self.merge(self.sort(L), self.sort(R))
-
-    # helper dividing function
-    def divide(self, us):
-        if not us or len(us) <= 1:
-            raise ValueError
-        # divide into left and right and return
-        mid = len(us)//2
-        L = us[:mid]
-        R = us[mid:]
-        return L, R
-
-    # helper mergering function
-    def merge(self, l, r):
-        # compare from left to right on two list and combine
-        logging.info("Current merging:")
-        logging.info('l = %s', str(l))
-        logging.info('r = %s', str(r))
-        i, j = 0, 0
-        m, n = len(l), len(r)
-        comb = []
-        while i < m and j < n:
-            if l[i] <= r[j]:
-                comb.append(l[i])
-                i += 1
-            else:
-                comb.append(r[j])
-                j += 1
-        if i < m:
-            comb += l[i:]
-        elif j < n:
-            comb += r[j:]
-        return comb
-
+    def push(self, v):
+        logging.info("Now pushing %d" % v)
+        self.buff.append(v)
+        if len(self.buff) >= self.size:
+            with open('output/sorted.txt', 'a') as f:
+                for each in self.buff:
+                    f.write(str(each)+'\n')
+            self.buff.clear()
+        logging.info("Buff after push is %s" % str(self.buff))
 # unit test class
 
 
 class testMerge(unittest.TestCase):
-
     def test_init(self):
-        files = [file for file in os.listdir('input/')]
-        foo = mergesort(100, files)
-        self.assertEqual(['unsorted_9.txt', 'unsorted_8.txt', 'unsorted_10.txt', 'unsorted_3.txt', 'unsorted_2.txt',
-                          'unsorted_1.txt', 'unsorted_5.txt', 'unsorted_4.txt', 'unsorted_6.txt', 'unsorted_7.txt'], foo._files)
-        self.assertEqual(100, foo._size)
-
-    def test_readone(self):
-        foo = mergesort(100, './')
-        foo.readone('unsorted_1.txt')
-
-    def test_readn(self):
-        files = [file for file in os.listdir('input/')]
-        foo = mergesort(100, files)
-        foo.readn()
-
-    def test_mergen(self):
         pass
 
-    def test_mergeone(self):
-        pass
+    def test_inbuff(self):
+        foo = inbuff("intest.txt")
+        self.assertEqual([i for i in range(10)], foo.read(10))
+        self.assertEqual([i for i in range(10, 20)], foo.read(10))
+        self.assertEqual([], foo.read(1))
 
-    def test_sort(self):
-        foo = mergesort(10, './')
-        self.assertEqual([i for i in range(1, 11)],
-                         foo.sort([i for i in range(10, 0, -1)]))
-
-    def test_divide(self):
-        foo = mergesort(10, './')
-        with self.assertRaises(ValueError):
-            cb = foo.divide([])
-        with self.assertRaises(ValueError):
-            cb = foo.divide([1])
-        self.assertEqual(([1], [2]), foo.divide([1, 2]))
-        self.assertEqual(([1], [2, 3]), foo.divide([1, 2, 3]))
-
-    def test_merge(self):
-        foo = mergesort(10, './')
-        self.assertEqual([], foo.merge([], []))
-        self.assertEqual([1, 2], foo.merge([2], [1]))
-        self.assertEqual([1, 2, 3, 4], foo.merge([2, 3], [1, 4]))
-        self.assertEqual([1, 2, 3, 4, 5], foo.merge([1, 2, 3, 4], [5]))
+    def test_outbuff(self):
+        foo = outbuff(10)
+        for i in range(9):
+            foo.push(i)
+            self.assertEqual([j for j in range(i+1)], foo.buff)
+        foo.push(9)
+        self.assertEqual([], foo.buff)
 
 
 if __name__ == "__main__":
