@@ -24,7 +24,7 @@ class mergesort:
     # constructor
     def __init__(self, size, files):
         super().__init__()
-        self._size = 0
+        self._size = size
         self._files = files
 
     # read a single unsorted file and output sorted
@@ -88,7 +88,11 @@ class mergesort:
 class testMerge(unittest.TestCase):
 
     def test_init(self):
-        pass
+        files = [file for file in os.listdir('input/')]
+        foo = mergesort(100, files)
+        self.assertEqual(['unsorted_9.txt', 'unsorted_8.txt', 'unsorted_10.txt', 'unsorted_3.txt', 'unsorted_2.txt',
+                          'unsorted_1.txt', 'unsorted_5.txt', 'unsorted_4.txt', 'unsorted_6.txt', 'unsorted_7.txt'], foo._files)
+        self.assertEqual(100, foo._size)
 
     def test_readone(self):
         pass

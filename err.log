@@ -1,39 +1,39 @@
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = []
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = []
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2]
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1]
-2020-02-02 16:09:38,416 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2, 3]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 4]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [1, 2, 3, 4]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [5]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [10]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [9]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [7]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [8]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6, 7]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [9, 10]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6, 7, 8]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [5]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [4]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2]
-2020-02-02 16:09:38,417 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [3]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [4, 5]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2, 3]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [6, 7, 8, 9, 10]
-2020-02-02 16:09:38,418 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2, 3, 4, 5]
+2020-02-02 16:14:32,114 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = []
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = []
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2, 3]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 4]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [1, 2, 3, 4]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [5]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [10]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [9]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [7]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6]
+2020-02-02 16:14:32,115 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [8]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6, 7]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [9, 10]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [6, 7, 8]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [5]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [4]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [2]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [3]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [4, 5]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2, 3]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:66] - INFO: Current merging:
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:67] - INFO: l = [6, 7, 8, 9, 10]
+2020-02-02 16:14:32,116 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:68] - INFO: r = [1, 2, 3, 4, 5]
