@@ -1,26 +1,391 @@
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:29] - INFO: Current fetching from 0 to 10
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:33] - INFO: Fetching result is [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:29] - INFO: Current fetching from 10 to 20
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:33] - INFO: Fetching result is [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:29] - INFO: Current fetching from 20 to 21
-2020-02-02 21:39:28,852 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:33] - INFO: Fetching result is []
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 0
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 1
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 2
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 3
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 4
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3, 4]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 5
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3, 4, 5]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 6
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3, 4, 5, 6]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 7
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3, 4, 5, 6, 7]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 8
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is [0, 1, 2, 3, 4, 5, 6, 7, 8]
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:44] - INFO: Now pushing 9
-2020-02-02 21:39:28,853 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:51] - INFO: Buff after push is []
+2020-02-02 23:25:09,238 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([0, 14, 16, 18, 26, 35, 38, 53, 76])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_8.txt is deque([0, 14, 16, 18, 26, 35, 38, 53, 76])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([2, 5, 13, 22, 27, 29, 36, 37, 44])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_9.txt is deque([2, 5, 13, 22, 27, 29, 36, 37, 44])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([0, 18, 23, 30, 45, 49, 50, 53, 58])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_10.txt is deque([0, 18, 23, 30, 45, 49, 50, 53, 58])
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,239 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([19, 41, 43, 59, 84, 103, 115, 150, 160])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_2.txt is deque([19, 41, 43, 59, 84, 103, 115, 150, 160])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([4, 27, 28, 36, 38, 49, 93, 114, 120])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_3.txt is deque([4, 27, 28, 36, 38, 49, 93, 114, 120])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([10, 23, 47, 67, 79, 81, 92, 110, 123])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_1.txt is deque([10, 23, 47, 67, 79, 81, 92, 110, 123])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([9, 56, 62, 62, 80, 87, 113, 121, 142])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_4.txt is deque([9, 56, 62, 62, 80, 87, 113, 121, 142])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([16, 20, 29, 30, 53, 64, 75, 79, 96])
+2020-02-02 23:25:09,240 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_5.txt is deque([16, 20, 29, 30, 53, 64, 75, 79, 96])
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([0, 9, 9, 28, 30, 70, 80, 81, 95])
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_7.txt is deque([0, 9, 9, 28, 30, 70, 80, 81, 95])
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:31] - INFO: Current fetching from 0 to 9
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:35] - INFO: Fetching result is deque([22, 32, 34, 36, 50, 50, 66, 75, 90])
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:94] - INFO: The initial inbuff of tmp_6.txt is deque([22, 32, 34, 36, 50, 50, 66, 75, 90])
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 0 from 0th buff is smaller then 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0]
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 0 from 2th buff is smaller then 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0]
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 0 from 8th buff is smaller then 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 0
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0]
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,241 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 2 from 1th buff is smaller then 2
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 2
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 4 from 4th buff is smaller then 4
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 4
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2, 4]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 5 from 1th buff is smaller then 5
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 5
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2, 4, 5]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 9 from 6th buff is smaller then 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2, 4, 5, 9]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 9 from 8th buff is smaller then 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2, 4, 5, 9, 9]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 9 from 8th buff is smaller then 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 9
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [0, 0, 0, 2, 4, 5, 9, 9, 9]
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 10 from 5th buff is smaller then 10
+2020-02-02 23:25:09,242 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 10
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 13 from 1th buff is smaller then 13
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 13
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13]
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 14 from 0th buff is smaller then 14
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 14
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14]
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 16 from 0th buff is smaller then 16
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 16
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16]
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 16 from 7th buff is smaller then 16
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 16
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16]
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,243 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 18 from 0th buff is smaller then 18
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 18
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16, 18]
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 18 from 2th buff is smaller then 18
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 18
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16, 18, 18]
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 19 from 3th buff is smaller then 19
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 19
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16, 18, 18, 19]
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 20 from 7th buff is smaller then 20
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 20
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16, 18, 18, 19, 20]
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 22 from 1th buff is smaller then 22
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 22
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [13, 14, 16, 16, 18, 18, 19, 20, 22]
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 22 from 9th buff is smaller then 22
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 22
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,244 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 23 from 2th buff is smaller then 23
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 23
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 23 from 5th buff is smaller then 23
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 23
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 26 from 0th buff is smaller then 26
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 26
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 27 from 1th buff is smaller then 27
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 27
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 27 from 4th buff is smaller then 27
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 27
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27, 27]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 28 from 4th buff is smaller then 28
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 28
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27, 27, 28]
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 28 from 8th buff is smaller then 28
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 28
+2020-02-02 23:25:09,245 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27, 27, 28, 28]
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 29 from 1th buff is smaller then 29
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 29
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27, 27, 28, 28, 29]
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 29 from 7th buff is smaller then 29
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 29
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [23, 23, 26, 27, 27, 28, 28, 29, 29]
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 30 from 2th buff is smaller then 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 30 from 7th buff is smaller then 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30]
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 30 from 8th buff is smaller then 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 30
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30]
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 32 from 9th buff is smaller then 32
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 32
+2020-02-02 23:25:09,246 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 34 from 9th buff is smaller then 34
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 34
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 35 from 0th buff is smaller then 35
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 35
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34, 35]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 36 from 1th buff is smaller then 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34, 35, 36]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 36 from 4th buff is smaller then 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34, 35, 36, 36]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 36 from 9th buff is smaller then 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 36
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34, 35, 36, 36, 36]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 37 from 1th buff is smaller then 37
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 37
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [30, 30, 32, 34, 35, 36, 36, 36, 37]
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 38 from 0th buff is smaller then 38
+2020-02-02 23:25:09,247 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 38
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 38 from 4th buff is smaller then 38
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 38
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38]
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 41 from 3th buff is smaller then 41
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 41
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41]
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 43 from 3th buff is smaller then 43
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 43
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43]
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 44 from 1th buff is smaller then 44
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 44
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44]
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 45 from 2th buff is smaller then 45
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 45
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44, 45]
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 47 from 5th buff is smaller then 47
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 47
+2020-02-02 23:25:09,248 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44, 45, 47]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 49 from 2th buff is smaller then 49
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 49
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44, 45, 47, 49]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 49 from 4th buff is smaller then 49
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 49
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44, 45, 47, 49, 49]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 50 from 2th buff is smaller then 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [38, 41, 43, 44, 45, 47, 49, 49, 50]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 50 from 9th buff is smaller then 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 50 from 9th buff is smaller then 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 50
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 53 from 0th buff is smaller then 53
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 53
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53]
+2020-02-02 23:25:09,249 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 53 from 2th buff is smaller then 53
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 53
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 53 from 7th buff is smaller then 53
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 53
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 56 from 6th buff is smaller then 56
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 56
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53, 56]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 58 from 2th buff is smaller then 58
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 58
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53, 56, 58]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 59 from 3th buff is smaller then 59
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 59
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53, 56, 58, 59]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 62 from 6th buff is smaller then 62
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 62
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53, 56, 58, 59, 62]
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 62 from 6th buff is smaller then 62
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 62
+2020-02-02 23:25:09,250 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [50, 53, 53, 53, 56, 58, 59, 62, 62]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 64 from 7th buff is smaller then 64
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 64
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 66 from 9th buff is smaller then 66
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 66
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 67 from 5th buff is smaller then 67
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 67
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 70 from 8th buff is smaller then 70
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 70
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 75 from 7th buff is smaller then 75
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 75
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 75 from 9th buff is smaller then 75
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 75
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75, 75]
+2020-02-02 23:25:09,251 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 76 from 0th buff is smaller then 76
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 76
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75, 75, 76]
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 79 from 5th buff is smaller then 79
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 79
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75, 75, 76, 79]
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 79 from 7th buff is smaller then 79
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 79
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75, 75, 76, 79, 79]
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 80 from 6th buff is smaller then 80
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 80
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [66, 67, 70, 75, 75, 76, 79, 79, 80]
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 80 from 8th buff is smaller then 80
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 80
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 81 from 5th buff is smaller then 81
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 81
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81]
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,252 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 81 from 8th buff is smaller then 81
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 81
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 84 from 3th buff is smaller then 84
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 84
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 87 from 6th buff is smaller then 87
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 87
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 90 from 9th buff is smaller then 90
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 90
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87, 90]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 92 from 5th buff is smaller then 92
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 92
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87, 90, 92]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 93 from 4th buff is smaller then 93
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 93
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87, 90, 92, 93]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 95 from 8th buff is smaller then 95
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 95
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87, 90, 92, 93, 95]
+2020-02-02 23:25:09,253 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 96 from 7th buff is smaller then 96
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 96
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [81, 81, 84, 87, 90, 92, 93, 95, 96]
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 103 from 3th buff is smaller then 103
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 103
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 110 from 5th buff is smaller then 110
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 110
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110]
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 113 from 6th buff is smaller then 113
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 113
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113]
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 114 from 4th buff is smaller then 114
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 114
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114]
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 115 from 3th buff is smaller then 115
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 115
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115]
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,254 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 120 from 4th buff is smaller then 120
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 120
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115, 120]
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 121 from 6th buff is smaller then 121
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 121
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115, 120, 121]
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 123 from 5th buff is smaller then 123
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 123
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115, 120, 121, 123]
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 142 from 6th buff is smaller then 142
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 142
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115, 120, 121, 123, 142]
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 150 from 3th buff is smaller then 150
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 150
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is [110, 113, 114, 115, 120, 121, 123, 142, 150]
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:113] - INFO: Found 160 from 3th buff is smaller then 160
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:56] - INFO: Now pushing 160
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:60] - INFO: Buff after push is []
+2020-02-02 23:25:09,255 - /Users/pc/Documents/Source/CMPE273-Lab1/ext_merge_sort.py[line:99] - INFO: Now start to finding minimum
