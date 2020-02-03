@@ -98,19 +98,19 @@ class mergeSort():
             empty = 0
             logging.info("Now start to finding minimum")
             for i, v in enumerate(self.inbuffs):
-                empty = 0
                 if v.peek() == None:
                     empty += 1
                     continue
                 elif v.peek() < m:
                     ind = i
                     m = v.peek()
+            logging.info("Now the empty is %d" % empty)
             if empty == 10:
                 self.outbuff.out()
                 break
 
-            logging.info("Found %d from %dth buff is smaller then %d" %
-                         (self.inbuffs[ind].peek(), ind, m))
+            logging.info("Found %d from %dth buff is smallest" %
+                         (self.inbuffs[ind].peek(), ind))
             m = self.inbuffs[ind].pop()
             if not self.inbuffs[ind].peek:
                 logging.info("Now the %dth buff is empty" % ind)
