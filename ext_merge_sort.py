@@ -99,9 +99,11 @@ class mergeSort():
             logging.info("Now start to finding minimum")
             for i, v in enumerate(self.inbuffs):
                 if v.peek() == None:
-                    empty += 1
-                    continue
-                elif v.peek() < m:
+                    v.read(9)
+                    if v.peek() == None:
+                        empty += 1
+                        continue
+                if v.peek() < m:
                     ind = i
                     m = v.peek()
             logging.info("Now the empty is %d" % empty)
