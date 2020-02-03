@@ -44,10 +44,11 @@ class mergesort:
     def mergeone(self):
         pass
 
-    @staticmethod
-    # merge sort a limited size array
-    def sort(us):
-        pass
+    def sort(self, us):
+        if not us or len(us) <= 1:
+            return us
+        L, R = self.divide(us)
+        return self.merge(self.sort(L), self.sort(R))
 
     # helper dividing function
     def divide(self, us):
@@ -102,7 +103,9 @@ class testMerge(unittest.TestCase):
         pass
 
     def test_sort(self):
-        pass
+        foo = mergesort(10, './')
+        self.assertEqual([i for i in range(1, 11)],
+                         foo.sort([i for i in range(10, 0, -1)]))
 
     def test_divide(self):
         foo = mergesort(10, './')
