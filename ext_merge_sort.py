@@ -29,12 +29,21 @@ class mergesort:
 
     # read a single unsorted file and output sorted
     def readone(self, file):
-        pass
+        us = []
+        filename = file.split("_")[-1]
+        with open('input/'+file, 'r') as f:
+            for line in f:
+                us.append(int(line))
+        us = self.sort(us)
+        with open('output/sorted_'+filename, 'w') as f:
+            for each in us:
+                f.write(str(each)+'\n')
 
     # read multiple unsorted files and output sorted
+
     def readn(self):
         for each in self._files:
-            readone(each)
+            self.readone(each)
 
     # merge sorted files and output multiple
     def mergen(self):
@@ -95,10 +104,13 @@ class testMerge(unittest.TestCase):
         self.assertEqual(100, foo._size)
 
     def test_readone(self):
-        pass
+        foo = mergesort(100, './')
+        foo.readone('unsorted_1.txt')
 
     def test_readn(self):
-        pass
+        files = [file for file in os.listdir('input/')]
+        foo = mergesort(100, files)
+        foo.readn()
 
     def test_mergen(self):
         pass
