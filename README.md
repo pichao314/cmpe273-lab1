@@ -2,11 +2,17 @@
 
 ## Introduce
 
-### Module version
+### Environment
 
-asyncio 3.4.3
+- OS
+  - Ubuntu 18.04
+  - MacOS 10.15.3
+- Python 3.7.3
+- Asyncio 3.4.3
 
 ### Instruction
+
+Execute the `sort.sh` file to sort by sync and async version merge sort and output the result into `output/` folder as well.
 
 ```sh
 ./sort.sh
