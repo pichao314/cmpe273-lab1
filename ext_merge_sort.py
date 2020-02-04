@@ -6,7 +6,7 @@ import os
 import sys
 import unittest
 import logging
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(level=logging.WARNING,
                     filename='err.log',
                     filemode='w',
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
@@ -121,10 +121,10 @@ class mergeSort():
 
 
 class testMerge(unittest.TestCase):
-    def _test_init(self):
+    def test_init(self):
         files = os.listdir('input')
 
-    def _test_inbuff(self):
+    def test_inbuff(self):
         foo = inbuff("intest.txt")
         self.assertEqual([i for i in range(10)], foo.read(10))
         self.assertEqual(0, foo.peek())
@@ -132,7 +132,7 @@ class testMerge(unittest.TestCase):
         self.assertEqual([i for i in range(10, 20)], foo.read(10))
         self.assertEqual([], foo.read(1))
 
-    def _test_outbuff(self):
+    def test_outbuff(self):
         foo = outbuff(10)
         for i in range(9):
             foo.push(i)
@@ -140,7 +140,7 @@ class testMerge(unittest.TestCase):
         foo.push(9)
         self.assertEqual([], foo.buff)
 
-    def _test_sort(self):
+    def test_sort(self):
         foo = mergeSort()
         foo.sort(os.listdir('input'))
 
@@ -152,7 +152,9 @@ class testMerge(unittest.TestCase):
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        pass
+        foo = mergeSort()
+        foo.sort(os.listdir('input'))
+        foo.merge(os.listdir('tmp'))
     elif len(sys.argv) == 2:
         pass
     else:
