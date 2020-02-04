@@ -1,6 +1,42 @@
-# cmpe273-spring20-lab1
+# CMPE273-LAB1
 
-## Requirements
+## Introduce
+
+### Module version
+
+asyncio 3.4.3
+
+### Instruction
+
+```sh
+./sort.sh
+```
+
+## Result Compare
+
+| time | Synchronous | Asynchronous |
+| ---- | ----------- | ------------ |
+| real | 0m0.143s    | 0m0.245s     |
+| user | 0m0.110s    | 0m0.207      |
+| sys  | 0m0.029     | 0m0.034      |
+
+After comparing we can see that the the asynchronous version of external sort did not perform better, this may due to the size of data is not big enough, therefore the time delay of coroutine task switch may cost more then the time saved by async-sorting multiple input files.
+
+## Algorithm Introduce
+
+### External Sort
+
+As for the limitation of RAM in external sort, there have multiple inbuffs for each input files that keep reading limited buck of data each time, and there have a outbuff that keep accepting the compared result from each inbuff and output to the sorted file once filled.
+
+### Asynchronous
+
+The asyncio module is used in the sorting or each single file. Without asyncio, the sorting of one file should be waited until the former file was sorted. With asyncio, all the sorting task can be placed in a event loop that the main task do not have to wait one by one.
+
+Inbuff size: 9
+Outbuff size:10
+Total size of used ram: 9 * 10 + 10 = 100
+
+## Appendix(Requirements)
 
 Use any kind of [External Sorting](https://en.wikipedia.org/wiki/External_sorting) algorithm to sort all numbers from input/unsorted_*.txt files and save the sorted result into output/sorted.txt file amd async_sorted.txt file.
 

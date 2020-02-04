@@ -12,9 +12,8 @@ logging.basicConfig(level=logging.WARNING,
                     format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'
                     )
 
-# input and output buffer
 
-
+# input buffer
 class inbuff:
     def __init__(self, infile):
         super().__init__()
@@ -22,6 +21,7 @@ class inbuff:
         self.buff = deque()
         self.loc = 0
 
+    # read the limited size of numbers, if all popped, read new buck with limited size
     def read(self, size):
         with open(self.file, 'r') as f:
             self.buff.clear()
@@ -35,15 +35,19 @@ class inbuff:
             logging.info("Fetching result is %s" % str(self.buff))
         return list(self.buff)
 
+    # peek the latest element
     def peek(self):
         if not self.buff:
             return None
         return self.buff[0]
 
+    # pop the latest element
     def pop(self):
         if not self.buff:
             return None
         return self.buff.popleft()
+
+# output buffer
 
 
 class outbuff:
@@ -52,6 +56,7 @@ class outbuff:
         self.buff = []
         self.size = size
 
+    # push element into the buffer, output into local file and clear the buff once filled
     def push(self, v):
         logging.info("Now pushing %d" % v)
         self.buff.append(v)
@@ -59,12 +64,14 @@ class outbuff:
             self.out()
         logging.info("Buff after push is %s" % str(self.buff))
 
+    # output function
     def out(self):
         with open('output/sorted.txt', 'a') as f:
             for each in self.buff:
                 f.write(str(each)+'\n')
         self.buff.clear()
-# unit test class
+
+# merge sort is implement by separated sorting and merging
 
 
 class mergeSort():
@@ -73,6 +80,7 @@ class mergeSort():
         self.inbuffs = []
         self.outbuff = outbuff(10)
 
+    # read local input files and sort, output into separated files
     def sort(self, files):
         for file in files:
             name = file.split('_')[-1]
@@ -86,6 +94,7 @@ class mergeSort():
                 for each in st:
                     f.write(str(each)+'\n')
 
+    # merge sorted files into one single file
     def merge(self, files):
         for each in files:
             self.inbuffs.append(inbuff('tmp/'+each))
