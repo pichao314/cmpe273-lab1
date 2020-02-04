@@ -1,6 +1,6 @@
 Time of synchronized merge sort:
 
 
-real	0m0.245s
-user	0m0.109s
-sys	0m0.029s
+real	0m0.150s
+user	0m0.116s
+sys	0m0.031s
