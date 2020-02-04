@@ -38,9 +38,11 @@ As for the limitation of RAM in external sort, there have multiple inbuffs for e
 
 The asyncio module is used in the sorting or each single file. Without asyncio, the sorting of one file should be waited until the former file was sorted. With asyncio, all the sorting task can be placed in a event loop that the main task do not have to wait one by one.
 
-Inbuff size: 9
-Outbuff size:10
-Total size of used ram: 9 * 10 + 10 = 100
+>Inbuff size: 9
+
+>Outbuff size:10
+
+>Total size of used ram: 9 * 10 + 10 = 100
 
 ## Appendix(Requirements)
 
