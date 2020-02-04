@@ -59,7 +59,7 @@ class outbuff:
         logging.info("Buff after push is %s" % str(self.buff))
 
     def out(self):
-        with open('output/sorted.txt', 'a') as f:
+        with open('output/async_sorted.txt', 'a') as f:
             for each in self.buff:
                 f.write(str(each)+'\n')
         self.buff.clear()
