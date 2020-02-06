@@ -15,7 +15,7 @@
 Execute the `sort.sh` file to sort by sync and async version merge sort and output the result into `output/` folder as well.
 
 ```sh
-./sort.sh
+sh sort.sh
 ```
 
 ## Result Compare
@@ -38,11 +38,11 @@ As for the limitation of RAM in external sort, there have multiple inbuffs for e
 
 The asyncio module is used in the sorting or each single file. Without asyncio, the sorting of one file should be waited until the former file was sorted. With asyncio, all the sorting task can be placed in a event loop that the main task do not have to wait one by one.
 
->Inbuff size: 9
-
->Outbuff size:10
-
->Total size of used ram: 9 * 10 + 10 = 100
+>Inbuff used RAM: 9
+>Inbuff count: 10
+>Outbuff used RAM:10
+>Outbuff count: 1
+>Total Used RAM: 9 * 10 + 10 = 100
 
 ## Appendix(Requirements)
 
